@@ -1,4 +1,4 @@
-##问题分析
+## 问题分析
 
 ----------
 简书地址: http://www.jianshu.com/p/4c5f015b3b6c
@@ -37,11 +37,11 @@ ft.hide(new FirstFragment())
 
 想想看每次都replace一下！！这世界会有多美好！！！那么问题出在哪？回过头看看代码就会发现每次在add/replace或者show/hide都会new 一个新的实例，这就是致命原因！！！！！
 
-#废话少说，开始优化
+# 废话少说，开始优化
 
 ----------
 
-##方案一：
+## 方案一：
 
 预加载模式：
 
@@ -72,7 +72,7 @@ ft.hide(FirstFragment.getInstance())
 
 那有没有更好的方法呢？答案是肯定的
 
-方案二：
+## 方案二：
 
 动态加载模式：
 
@@ -127,7 +127,7 @@ public void onTabSelected(@IdRes int tabId) {
 
 现在你的Fragment无论怎么切都不会出现卡顿了，因为你的所有Fragment只会被实例化一次！实例一次的Fragment会被存入内存中，下次切换会判断内存中是否含有要切换的Fragment，如果有就直接复用，没有就add一个新的！优化大法完成！
 
-#外番
+# 外番
 ----------
 WHAT？等等！只实例一次，那我的Fragment里的数据要更新怎么办？我的回答是——软件关了再次重启！
 
