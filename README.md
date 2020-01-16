@@ -2,6 +2,7 @@
 
 ----------
 Fragment的大部分商业场景用法详见 [github地址传送](https://github.com/CharmingGeeker/SignAPP)   
+
 简书地址: http://www.jianshu.com/p/4c5f015b3b6c
 
 一直在看别人的技术贴，今天我也来写点自己的心得！最近在写一个项目用到大量的Fragment后的总结！
